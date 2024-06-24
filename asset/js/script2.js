@@ -48,8 +48,7 @@ document.addEventListener("keydown", function (event) {
 // Función para crear un nuevo div con el color especificado
 function createColoredDiv(color) {
   const newDiv = document.createElement("div");
-  newDiv.style.width = "200px";
-  newDiv.style.height = "200px";
+  newDiv.className = "cuadrado";
   newDiv.style.backgroundColor = color;
-  document.body.appendChild(newDiv);
+  document.querySelector(".cajitas").appendChild(newDiv);
 }

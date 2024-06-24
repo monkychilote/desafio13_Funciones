@@ -1,12 +1,6 @@
-#key {
-  width: 200px;
-  height: 200px;
-  background-color: white;
-  border: 1px solid black;
-}
-
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
@@ -24,7 +18,6 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 .card {
   background-color: #e0e0e0;
   border-radius: 8px;
@@ -43,6 +36,51 @@ body {
 
 .card:hover {
   background-color: #d0d0d0;
+}
+.cajitas {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten a la siguiente línea si es necesario */
+}
+
+.cuadrado {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+}
+
+#key {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  background-color: white;
+  border: 1px solid black;
+  margin-bottom: 20px; /* Espacio para separar el botón del div key */
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.volver {
+  display: flex;
+  justify-content: center;
+  width: 100%; /* Asegura que el contenedor del botón ocupe todo el ancho */
+}
+
+.button {
+  text-decoration: none;
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
 }
 
 /* Responsive Design */
